@@ -1,0 +1,42 @@
+Web service : Standardised method for communication between client and server
+            : Software module
+            : Set of protocols that enable communication
+
+Type of Webservices:
+    1. Soap Webservices => XML => Simple object access protocol
+    2. RESTful Webservices => JSON =>
+
+- Communication between client and server happens in the format of XML messages(operates between diff OS too)
+
+- XML messages are encoded which provides security
+- XML needs to works with http,smtp,tcp(commonly http). It can't work standard alone
+- Any language can interrupt SOAP services(Main Drawback and Choose spring)
+Uses:
+- Enterprise level applications
+- Business2Business(B2B) communication/applications
+- integration between legacy systems
+
+RESTful => Representational state transfer Webservices
+JSON expansion JavaScript Object Notation
+- Always uses HTTP/HTTPS
+- Relay on JSON which is lightweight
+- RESTful are stateless => no info about the previous request from the client will be held by the server
+- Client-Server architecture
+- HTTPS uses GET,POST,UPDATE,DELETE so on..
+GET - fetch some data from the server
+POST - post some data to the server
+Shopping portol -> application endpoints-> list of all items in my shop
+                -> pickup the product and read details of product
+                -> point of communication in each method is API
+Uses:
+public APIs - Application Interface
+Mobile Application Development
+MicroService Architecture
+
+About MicroService Architecture:
+
+before emergence of cloud applications, physical computers located in Hometown
+The customers details need to store in computer => here physical Computer act as server with one IP address
+IP address cannot be memorized so we give DNS => www.shopping.com
+
+If my computer can handle my shopping application by adding another Phys computer to balance the user request
