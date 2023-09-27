@@ -25,7 +25,7 @@ JSON expansion JavaScript Object Notation
 - HTTPS uses GET,POST,UPDATE,DELETE so on..
 GET - fetch some data from the server
 POST - post some data to the server
-Shopping portol -> application endpoints-> list of all items in my shop
+Shopping portal -> application endpoints-> list of all items in my shop
                 -> pickup the product and read details of product
                 -> point of communication in each method is API
 Uses:
@@ -40,3 +40,22 @@ The customers details need to store in computer => here physical Computer act as
 IP address cannot be memorized so we give DNS => www.shopping.com
 
 If my computer can handle my shopping application by adding another Phys computer to balance the user request
+
+But nowadays using cloud we can divide everything into modules
+If one system doesnt work another will work these technology is called Microservice Architecture
+
+Hexagonal Architecture will come into demand since MicroService Architecture is costlier
+
+Process of working when domain is entered:
+www.yeswanth.com => browser => domain name server(DNS)=> ip address => talk to server => see the website in your browser
+
+-----------------------------
+Server => Tomcat Server one server in java based web applications
+
+Protocol used by RESTfull services is HTTPS => hypertext transfer protocol with security
+
+HTTPS => acts between web browser - web server (Stateless protocol)
+
+Status codes => 200,404,405,500,502 many..
+https://www.yeswanth.com => secured website
+http://www.yeswanth.com => not secured website
