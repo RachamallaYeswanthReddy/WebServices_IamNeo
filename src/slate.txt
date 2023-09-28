@@ -86,3 +86,24 @@ Managing the lifecycle of bean or a component
 BeanFactory, ApplicationContent -> (just read about these)
 
 Spring Modules:
+Web Starter,Data Starter, Test Starter, AOP Starter
+
+SpringBoot Framework:
+For building Production Ready Application
+
+Two phases of building an application: Development phase, production phase
+
+I deploy my app in webserver and clients or users can access the application through browser=> come and call the webserver
+
+Embedded webserver => TOMCAT/ JETTY
+
+Microservices and cloud native app development
+
+AGILE Development
+
+IoC, DI
+
+Gradle/Maven => project management tool (without them we can build app completely)
+
+SpringBoot version -> 3.2.0 normal version instead of snapshot version
+    - snapshot version is like beta version
