@@ -59,3 +59,30 @@ HTTPS => acts between web browser - web server (Stateless protocol)
 Status codes => 200,404,405,500,502 many..
 https://www.yeswanth.com => secured website
 http://www.yeswanth.com => not secured website
+
+Spring Framework:
+    - Open Source Application Framework for java
+    - Development of Enterprise Application
+    - Open Source means open to everyone(no need to pay)
+
+Key Aspects :
+    - Inversion of Control(IoC): Core Principle of Spring frameWork
+    - Objects called as Beans or Components
+    - Manage the creation and writing of objects
+    - Loose coupling => functions are little bit dependent on each other
+    - IoC makes code make more testable Maintenance
+
+Dependency Injection(DI):
+    - it is carried out by IoC
+    - Two ways : -> Constructor DI and Setter Injection
+
+AOP Aspect Oriented Programming:
+Logging -> process keeping track of every activity
+Security, transaction, actual business logic are separated by using AOP and makes server crash free
+these separating things makes faster and easier separation
+
+Spring Container:
+Managing the lifecycle of bean or a component
+BeanFactory, ApplicationContent -> (just read about these)
+
+Spring Modules:
