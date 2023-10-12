@@ -11,9 +11,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor // no need to add the all values constructor
 public class Department {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     private String departmentName;
     private String departmentAddress;
     private String departmentCode;
+
 }
