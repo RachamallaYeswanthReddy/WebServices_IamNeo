@@ -19,7 +19,7 @@ public class DeptController {
 //  So in that case im auto wiring the instance
     @PostMapping("api/departments/department")
 //    create a record department in db
-    public ResponseEntity saveDepartment(Department department){ // method
+    public ResponseEntity saveDepartment(@RequestBody Department department){ // method
 //        www.google.com/yeswanth/history/4.10.2 => url(best practice)
         Department savedDepartment = deptService.saveDepartment(department);
         return new ResponseEntity(savedDepartment, HttpStatus.CREATED);
@@ -43,4 +43,10 @@ public class DeptController {
     public ResponseEntity updateDepartment(@PathVariable Long id, @RequestBody Department department){
         return new ResponseEntity(deptService.updateDepartment(id,department),HttpStatus.OK);
     }
+
+    @GetMapping("api/departments/department/{dCode}/{dName}")
+    public ResponseEntity findByCodeAndName(@PathVariable("dCode") String dCode, @PathVariable("dName") String dName){
+        return new ResponseEntity(deptService.findByDCodeAndName(dCode, dName), HttpStatus.OK);
+    }
+
 }
