@@ -5,7 +5,6 @@ import com.crud.CRUD.APPLICATION.Repository.DeptRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,8 +15,12 @@ public class DeptServiceImpl implements DeptService {
 
     @Override
     public Department saveDepartment(Department department) {
-        Department savedDepartment = DeptRepository.saveDepartment(department);
+        Department savedDepartment = deptRepository.save(department);
         return savedDepartment;
+    }
+    @Override
+    public List<Department> findByDCodeAndName(String dCode, String dName) {
+        return deptRepository.findByDCodeAndName(dCode, dName);
     }
 
     @Override
