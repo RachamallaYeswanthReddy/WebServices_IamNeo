@@ -46,7 +46,7 @@ public class DeptController {
 
     @GetMapping("api/departments/department/{dCode}/{dName}")
     public ResponseEntity findByCodeAndName(@PathVariable("dCode") String dCode, @PathVariable("dName") String dName){
-        return new ResponseEntity(deptService.findByDCodeAndName(dCode, dName), HttpStatus.OK);
+        return new ResponseEntity(deptService. findByDCodeAndName(dCode, dName), HttpStatus.OK);
     }
 
 }
